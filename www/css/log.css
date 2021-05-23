@@ -1,0 +1,171 @@
+body{
+	background: #d4dddd;
+}
+
+.logo {
+	
+	float: left;
+    width: 98%;
+    background: white;
+    margin-top: 30px;
+    border-radius: 25px;
+    margin: 1%;
+
+}
+
+.header {
+	font-size: 40px;
+	font-style: normal;
+	font-size-adjust: all;
+	margin-left:15px;
+	margin-right: 10px;
+}
+
+.welcome {
+	font-size-adjust: all;
+	font-size: 30px;
+	margin-left:	20px;
+	padding: 5px;
+	
+}
+
+.form{
+	
+	float: left;
+    width: 98%;
+    background: white;
+    margin-top: 20px;
+    height: 800px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    margin: 1%;
+
+}
+
+input[type="password"] {
+
+	    height: 100px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    font-family: Arial, Helvetica;
+    background: inherit;
+    font-size: 30px;
+    outline: none;
+}
+
+input[type="text"] {
+
+	width: 100%;
+    padding: 20px 20px;
+    margin: 8px\; box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    /* font-family: Arial, Helvetica; */
+    background: inherit;
+    height: 100px;
+    font-size: 30px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#forget {
+
+	width: 300px;
+    margin-left: 65%;
+    border: none;
+    font-family: Arial, Helvetica;
+    font-style: normal;
+    background: none;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#logon {
+	width: 50%;
+    position: center;
+    padding: 20px 20px;
+    margin-left: 25%;
+    border-radius: 40px;
+    background: #4848d6;
+    color: white;
+    height: 100px;
+    font-size: 30px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: bold;
+
+}
+
+#logon:hover{
+	background: green;
+}
+
+#signup {
+
+	width: 200px;
+    margin-left: 10%;
+    border: none;
+    font-family: Arial, Helvetica;
+    font-style: normal;
+    background: none;
+    margin-top: 40px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#new {
+
+	width: 35%;
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: #4848d6;
+    color: white;
+    height: 90px;
+    font-size: 30px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: bold;
+}
+
+#new:hover {
+	background: green;
+}
+
+#coworking {
+	width: 80%;
+}
+
+.description {
+	font-family: Arial, Helvetica sans-serif;
+    font-size: 30px;
+}
+.login-form{
+	margin-right: 30px;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.header2 {
+	font-family: Arial, Helvetica sans-serif;
+    font-size: 50px;
+
+}
+
+.signup {
+
+	margin-top: 15px;
+	
+}
+
+#new a {
+	color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+

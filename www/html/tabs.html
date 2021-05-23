@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <title>New Booking</title>
+        <link rel="stylesheet" href="../css/tabs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="../js/tabs.js"></script>
+        <script type="text/javascript" src="../js/dropdown.js"></script>
+        <!--script type="text/javascript" src="../js/index.js"></script-->
+
+
+    </head>
+    <body>
+
+          <!-- Top navigation menu -->
+        <section class="top-nav">
+            <div class="dropdown">
+                <input style="font-family: FontAwesome" type="submit" name="" onclick="myFunction()" class="dropbtn" value="&#xF0C9;">
+                  <div id="myDropdown" class="dropdown-content">
+
+
+                    <section class="#">              
+                      <button class="close"><i class="fa fa-times"></i></button> 
+                    </section>
+
+                    <section class="drpdown-content">
+                        <img src="../img/co-working.jpg" id="logo-img">
+                    </section>
+                    
+                    <section class="drpdown-content">
+                        <a href="#"><i class="fa fa-home" style="font-size: 30px; margin-right: 10px;"></i>Dashboard</a>
+                        <a href="#"><i class="fa fa-book" aria-hidden="true" style="font-size: 30px; margin-right: 10px;"></i>Bookings</a>
+                        <a href="#"><i class="fa fa-cogs" aria-hidden="true" style="font-size: 30px; margin-right: 10px;"></i>Settings</a>
+                        <a href="../html/user.html"><i class="fa fa-user" style="font-size: 30px; margin-right:10px; " aria-hidden="true"></i>User</a>
+                        
+                    </section>
+
+                    <section class="drpdown-content">
+                        <a href="../html/qr.html"><i class="fa fa-qrcode" style="margin-right: 10px;"></i>Scan QR code</a>
+                        <a href="#" id="navigate" onclick="navigate()"><i class="fa fa-street-view" style="margin-right: 10px;"></i>Navigate your booked desk</a>
+                        <a href="#"><i class="fa fa-user-plus" style="margin-right: 10px;"></i>Invite</a>
+                        <a href="../index.html"><i class="fa fa-sign-out" aria-hidden="true" style="margin-right: 10px;"></i>Logout</a>
+                    </section>
+                  </div>
+            </div>
+
+            <input style="font-family: FontAwesome; margin-left: 10px;" type="search" name="" placeholder="&#xF002; Search" id="search">
+
+    </section>
+
+
+
+        <!--The main tabs -->
+
+        <!--div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Dashboard')"><i class="fa fa-home" style="font-size: 30px;"></i><br>Dashboard</button>
+        <button class="tablinks" onclick="openTab(event, 'Bookings')"><i class="fa fa-book" aria-hidden="true" style="font-size: 30px;"></i><br>Bookings</button>
+        <button class="tablinks" onclick="openTab(event, 'Settings')"><i class="fa fa-cogs" aria-hidden="true" style="font-size: 30px;"></i><br>Settings</button>
+        <button class="tablinks" onclick="openTab(event, 'User')"><i class="fa fa-user" style="font-size: 30px; margin-bottom: none; margin-top: 5px; " aria-hidden="true"></i><br>User</button>
+        </div-->
+     
+
+  
+
+
+    <!-- Tab content -->
+    <section class="contents">
+        <div>
+            <div id="Dashboard" class="tabcontent">
+        <h3>Dashboard</h3>
+        <p>--the contents of the dashboard will be displayed here--</p>
+        </div>
+
+        <div id="Bookings" class="tabcontent">
+        <h3>Bookings</h3>
+        <p>--The bookings and functionalities will be displayed on this tab--</p>
+        </div>
+
+        <div id="Settings" class="tabcontent">
+        <h3>Settings</h3>
+        <p>--The site settings and other menus will be displayed here--</p>
+        </div>
+
+        
+        </div>
+        
+    
+    </section>
+
+    <script type="text/javascript">
+        
+        function navigate() {
+            sensor = window​.ondeviceproximity();
+            sensor.addEventListener('reading', listener)
+            sensor.start();
+
+            if(sensor.near()){
+                alert("true");
+            }
+            else{
+                alert("false");
+            }
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,161 @@
+
+body {
+
+	background: #d4dddd;
+}
+
+
+.contents {
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 40px;
+    background: white;
+    height: 2200px;
+    border-radius: 25px;
+    padding-top: 10PX;	
+    padding-bottom: 20px;
+}
+
+.text {
+	margin-left: 20px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+
+	width: 90%;
+    padding: 20px 25px;
+    border-radius: 25px;
+    border: black solid;
+    height: 60px;
+    font-size: 40px;
+    font-family: Arial Helvetica;
+    background-color: #f1f1f1;
+    margin-top: 15px;
+    outline: none;
+
+}
+
+label {
+	font-size: 40px;
+	margin-left: 20px;
+	font-family: Arial Helvetica;
+	font-weight: bold;
+}
+
+.signup {
+
+	margin-top: 100px;
+}
+
+
+input[type="submit"] {
+
+	width: 45%;
+    position: center;
+    padding: 12px 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    height: 100px;
+    font-size: 35px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: Arial Helvetica;
+    background: #4848d6;
+    color: white;
+
+}
+
+#cancel {
+    width: 45%;
+    position: center;
+    padding: 12px 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    height: 100px;
+    font-size: 35px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: Arial Helvetica;
+    background: #4848d6;
+    color: white;
+}
+
+input[type="email"] {
+
+	width: 90%;
+    padding: 20px 25px;
+    border-radius: 25px;
+    border: black solid;
+    height: 60px;
+    font-size: 40px;
+    font-family: Arial Helvetica;
+    background-color: #f1f1f1;
+    margin-top: 15px;
+    outline: none;
+
+}
+
+input[type="password"] {
+
+	width: 90%;
+    padding: 20px 25px;
+    border-radius: 25px;
+    border: black solid;
+    height: 60px;
+    font-size: 40px;
+    font-family: Arial Helvetica;
+    background-color: #f1f1f1;
+    margin-top: 15px;
+    outline: none;
+
+}
+
+
+input[type="submit"]:hover{
+	background: green;
+}
+
+input[type="text"]::placeholder{
+
+	color: solid black;
+	
+
+}
+span {
+
+	font-family: Arial Helvetica;
+	font-size: 30px;
+}
+
+#agree {
+
+    transform: scale(4);
+    margin-left: 20px;
+}
+
+.checkboxText {
+    font-size: 40px;
+    font-family: Arial Helvetica sans-serif;
+    margin-left: 20px;
+}
+
+.terms {
+
+    color: black;
+    font-family: Arial Helvetica sans-serif;
+
+}
+
+.terms:hover {
+    color: #ddd;
+}
+
+#cancel {
+    background: #d71212;
+}
+
+#cancel:hover {
+    background: #f74949;
+}
