@@ -10,9 +10,9 @@ body {
     margin-left: 1%;
     margin-top: 40px;
     background: white;
-    height: 2200px;
+    height: 2300px;
     border-radius: 25px;
-    padding-top: 10PX;	
+    padding-top: 5PX;
     padding-bottom: 20px;
 }
 
@@ -159,3 +159,14 @@ span {
 #cancel:hover {
     background: #f74949;
 }
+
+#back {
+   font-size: 40px;
+    /* width: 250px; */
+    background: white;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+ }

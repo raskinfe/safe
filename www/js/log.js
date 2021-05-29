@@ -5,8 +5,30 @@ function authenticate() {
   var username = document.getElementById('username').value;
 
   
-  loggedIn = check(password, username);
-  status();
+   var data = JSON.parse(localStorage.getItem('data'));
+
+   var j = data.length;
+
+   if(j > 0 ) {
+
+    for(var i = 0; i<j; i+=8){
+
+      if(password == data[(i+4)] && username == data[(i+2)]) {
+
+        window.location.href = "../www/html/tabs.html";
+
+      } else if (username == data[(i+2)] && password !== data[(i+4)]) {
+
+        document.getElementById('pmsg').innerHTML = "**Incorrect password!";
+      } else if(username !== data[(i+2)] && password == data[(i+4)]) {
+
+        document.getElementById('umsg').innerHTML = "**Incorrect username!";
+      } else {
+
+        alert("Invalid credential")
+      }
+    }
+   }
 
 }
 

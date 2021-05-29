@@ -20,8 +20,8 @@
 
             <div class="usr-info">
                 <div><p class="decl">Full Name</p>
-                    <p id="first_name" class="first"></p>
-                <p id="last_name" class="last"></p></div>
+                    <p id="first_name"></p>
+                </div>
                <div>
                     <p class="decl" id="Email">Email</p>
                     <p id="email"></p>
@@ -52,8 +52,8 @@
         department = data.slice(6,7);
         position = data.slice(7,8);
 
-        document.getElementById('first_name').innerHTML = first_name;
-        document.getElementById('last_name').innerHTML = last_name;
+        document.getElementById('first_name').innerHTML = first_name + " " + last_name ;
+        
         document.getElementById('email').innerHTML = email;
         document.getElementById('company').innerHTML = company;
         document.getElementById('department').innerHTML = department;

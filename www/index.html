@@ -20,21 +20,24 @@
         </section>
         
         <section class="form">
-        <form class="login-form">
+        <form class="login-form" onsubmit="return false">
             <div>
                 <h1 class="header2">Log in to your account</h1>
                 <p class="description">Enter your details to login</p>
             </div>
-            <input style="font-family: FontAwesome;" type="text" name="username" placeholder="&#61447; Username" id="username">
-            <br><input style="font-family: FontAwesome;" type="password" name="password" placeholder="&#xf084; Password" id="password"><br>
+            <input style="font-family: FontAwesome;" type="text" name="username" placeholder="&#61447; Username" id="username" required><br>
+            <span id="umsg" style="color:red; font-size: 17px;"></span>
+            <br><input style="font-family: FontAwesome;" type="password" name="password" placeholder="&#xf084; Password" id="password" required><br>
             <button id="forget">Forgot password?</button><br>
+            <span id="pmsg" style="color:red; font-size: 17px;"></span>
             <br><input id="logon" onclick="authenticate()" type="submit" value="Login"><br>
 
-            <div class="signup">
-                <br><label id="signup">Need an account? </label>
-                <button id="new" onclick="#"><a href="/html/signup.html">Sign up</a> </button>
-            </div>
+            
         </form>
+        <div class="signup">
+                <br><label id="signup">Need an account? </label>
+                <button id="new" onclick="#"><a href="../www/html/signup.html">Sign up</a> </button>
+            </div>
     </section>
 
     <!--section class="left">

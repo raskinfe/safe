@@ -59,8 +59,7 @@ h1 {
  }
 
  #back {
-    float: left;
-    padding: 10px 20px;
+   padding: 10px 20px;
     /* margin-left: 20px; */
     margin-top: 10px;
     border-radius: 25px;
@@ -69,8 +68,7 @@ h1 {
     background: white;
     border: none;
     font-weight: bold;
+    margin-bottom: 40px;
  }
 
- #back:hover {
-    background: #ecebeb;
- }
+ 

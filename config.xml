@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SafeSpace</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="kinfemichaelalemu@gmail.com" href="#">
+        Kinfemichael Alemu
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="https://example.com/*" />
+    <platform name="android">
+        <allow-navigation href="https://example.com/*" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <icon src="/www/img/co-working.jpg"  width="57" height="57" density="mdpi" />
+    <feature name="DatePicker">
+    <param name="ios-package" value="DatePicker"/>
+    </feature>
+
+    <feature name="DatePickerPlugin">
+        <param name="android-package" value="com.okaybmd.cordova.plugin.datepicker.DatePickerPlugin"/>
+    </feature>
+    <access origin="*"/>
+    <preference name="android-minSdkVersion" value="19"/>
+</widget>
